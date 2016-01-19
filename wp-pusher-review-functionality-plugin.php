@@ -17,5 +17,5 @@ class WP_Pusher_Review {
 		// Register hooks here
 	}
 }
-new WP_Pusher_Review()
+new WP_Pusher_Review();
 
