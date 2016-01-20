@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 class WP_Pusher_Review {
 	function __construct() {
 		// Register hooks here
-		add_action('wppusher_theme_was_installed', [ $this, 'plugin_was_updated'], 10, 1);
+		add_action('wppusher_plugin_was_updated', [ $this, 'plugin_was_updated'], 10, 1);
 	}
 	public function plugin_was_updated( $action ) {
 		error_log( print_r( [ 'action' => $action], 1 ) );
