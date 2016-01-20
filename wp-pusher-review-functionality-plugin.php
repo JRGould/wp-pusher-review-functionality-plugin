@@ -15,6 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 class WP_Pusher_Review {
 	function __construct() {
 		// Register hooks here
+		// another change
 	}
 }
 new WP_Pusher_Review();
