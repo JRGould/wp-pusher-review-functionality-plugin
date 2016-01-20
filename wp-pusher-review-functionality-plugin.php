@@ -19,7 +19,7 @@ class WP_Pusher_Review {
 		add_action('wppusher_plugin_was_updated', [ $this, 'plugin_was_updated'], 10, 1);
 	}
 	public function plugin_was_updated( $action ) {
-		error_log( print_r( [ 'action' => $action], 1 ) );
+		error_log( print_r( [ 'ACTION!' => $action], 1 ) );
 	}
 }
 new WP_Pusher_Review();
