@@ -16,7 +16,7 @@ class WP_Pusher_Review {
 	
 	function __construct() {
 		// Register hooks here
-		error_log( 'plugin constructed...' );
+		error_log( 'Func test plugin constructed...' );
 		add_action('wppusher_plugin_was_updated', [ $this, 'plugin_was_updated'], 10, 1);
 		register_activation_hook( __FILE__, [ $this, 'plugin_was_activated' ] );
 	}
